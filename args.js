@@ -1,4 +1,4 @@
-    module.exports = {
+    let calc = {
 
         mult (x,y){
             return x*y
@@ -8,3 +8,5 @@
             return x + y
         }
     }
+
+    module.exports = calc;
