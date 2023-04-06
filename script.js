@@ -1,5 +1,6 @@
 
-const btnMenu = document.querySelector('.btnMenu');
+const btnMenu = document.querySelector('.btnMenu').addEventListener('click', toglleMenu)
+
 
 function toglleMenu(e){
     if(e.type === 'touchstart') e.preventDefault();
@@ -7,4 +8,3 @@ function toglleMenu(e){
     navBar.classList.toggle('active')
 }
 
-btnMenu.addEventListener('click', toglleMenu)
