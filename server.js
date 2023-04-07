@@ -1,15 +1,13 @@
 let http = require('http')
+const url = require('url')
 
-
-http.createServer((req,res) => {
-   
-    res.writeHead(200, {'Content-Type': 'text/plain'})
-    res.end('Hello world')
-
-}).listen(3000, (error)=> {
-    if(error){
+http.createServer((req,res)=> {
+    let path = url.parse(req.url);  
+  res.end("oii")
+}).listen(3000, (error) => {
+    if (error){
         console.log(error)
     }else{
         console.log('servidor rodando na porta 3000')
     }
-})
+} )
