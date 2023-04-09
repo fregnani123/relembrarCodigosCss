@@ -49,7 +49,7 @@ const server = http.createServer((req, res) => {
     res.write('Página não encontrada');
     res.end();
   }
-}).listen(3000, 'localhost', (err) => {
+}).listen(3000, (err) => {
   if (err) {
     console.log(err);
   } else {
