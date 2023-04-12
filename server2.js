@@ -1,11 +1,22 @@
+// const express = require('express');
+// const path = require('path');
+// const app = express();
 
-const args = process.argv.slice(2)
+// app.use(express.static(path.join(__dirname, '')))
 
-let a = Number(args[0])
-let b = Number(args[1])
-let c = (a * b) / 100
+// const PORT = 3000;
+// app.listen(PORT, () => {
+//     console.log(`Server runing on Port ${PORT}`) }
+// )
 
-console.log('O desconto é de R$' + c)
+
+// const args = process.argv.slice(2)
+
+// let a = Number(args[0])
+// let b = Number(args[1])
+// let c = (a * b) / 100
+
+// console.log('O desconto é de R$' + c)
 
 // const http = require('http');
 // const fs = require('fs');
